@@ -1,0 +1,452 @@
+/*  
+Author: Sandra Arriaza
+File Name: styles.css
+Date: 10/02/2023
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3,
+video,
+aside {
+  margin: 0;
+  padding: 1%;
+  border: 0;
+  text-align: center;
+  color: navy;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: white;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Begin style rules for mobile viewports */
+/* Style rules for mobile viewports */
+
+/* Hide tab-desk class */
+.tab-desk, #menu-links {
+  display: none;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Style rule for round images */
+.round {
+  border-radius: 10px;
+  margin: auto;
+}
+
+/* Style rules for h1 */
+h1 {
+  text-decoration: underline;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Style rules for navigation area */
+
+/* Style rule for the nav selector */
+nav {
+  background-color: #f28a30;
+  padding: 0;
+}
+
+/* Style rule for nav ul */
+nav ul {
+  display: flex;
+    justify-content: center;
+}
+
+/* Style rule for nav li */
+nav li {
+  display: block;
+  font-size: 1.5em;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  list-style: none;
+}
+
+nav li:hover {
+  background-color: #f05837;
+}
+
+/* Style rule for nav li a */
+nav li a {
+  display: block;
+  color: #fff;
+  padding: .5em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+main.grid {
+  overflow: hidden; /* Clear the float */
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout for mobile */
+}
+
+/* Style rule for video in mobile layout */
+video {
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  font-style: italic;
+  width: 100%;
+}
+
+/* Style rules for main content */
+main {
+  padding: 2%;
+  font-family: 'Lato', sans-serif;
+  list-style-type: none;
+}
+
+/* Style rule for main paragraphs */
+main p {
+  font-size: 1.25em;
+}
+
+
+
+
+
+
+/* About Us start */
+
+
+
+
+
+
+/* About Us end */
+
+
+
+
+
+
+/* Services start */
+/* Style rules for tables */
+table, th, td {
+  border: 2px solid;
+  border-collapse: collapse;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  font-weight: bold;
+  
+}
+
+th {
+  background-color: lightskyblue;
+  text-align: center;
+}
+
+caption {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 2%;
+}
+
+/* Style rule for form elements */
+
+fieldset, input, textarea {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+fieldset {
+  display: inline-block;
+  border-color: navy;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+label {
+  display: block;
+  padding: 2%;
+  font-weight: bold;
+}
+
+#submit {
+  border: 1px solid #00000029;
+width: 200px;
+border-radius: 10px;
+}
+
+/* Services end */
+
+
+
+
+
+
+/* Gallery start */
+
+.images-container {
+  display: flex;
+}
+/* Style rule for aside, figure, and figcaption */
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+figure {
+  border: 4px solid #f28a30;
+  max-width: 400px;
+  margin: 2% auto;
+  box-shadow: 5px 5px #6975a6;
+}
+
+figcaption {
+  padding: 2%;
+  border-top: 4px solid #6975a6;
+  text-decoration:wavy
+}
+
+/* Gallery end */
+
+
+
+
+
+
+/* Contact start */
+
+/* Style rule for form elements */
+
+fieldset, input, textarea {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+fieldset {
+  display: inline-block;
+  border-color: navy;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+label {
+  display: block;
+  padding: 2%;
+  font-weight: bold;
+}
+
+#submit {
+  border: 1px solid #00000029;
+width: 200px;
+border-radius: 10px;
+}
+
+
+
+
+
+/* Contact end */
+
+
+
+
+
+/* Style rule for class selector .link */
+.link {
+  color: navy;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Style rule for id selector #contact */
+#contact {
+  text-align: left;
+  padding: 1% 0%;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#form, h2, #submit {
+  color:navy;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 1%;
+}
+
+ul li {
+      list-style: none;
+}
+
+/* Style rule for aside, figure, and figcaption */
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+figure {
+  border: 4px solid lightskyblue;
+  max-width: 400px;
+  margin: 2% auto;
+  box-shadow: 5px 5px navy;
+}
+
+figcaption {
+  padding: 2%;
+  border-top: 4px solid navy;
+  text-decoration:wavy
+}
+
+
+/* Style rules for form elements */
+/* Style rules for mobile viewport */
+
+
+
+.form-grid {
+      border: 1px solid #00000029;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.customer-info-container {
+  display: flex;
+      justify-content: center;
+}
+
+#submit {
+      border: 1px solid #00000029;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Style rule for fieldset and input selectors */
+fieldset, input {
+  margin-bottom: 2%;
+}
+
+/* Style rule for fieldset legend selector */
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* Style rule for label selector */
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+/* Style rule for form #submit selector */
+#submit {
+  margin: 0 auto;
+  display: block;
+  padding: 1%;
+  background-color: #fff;
+  font-size: 1em;
+}
+
+
+
+/* Style rules for footer content */
+
+/* Style rule for footer selector */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: lightskyblue;
+  color: navy;
+  padding: 1% 0%;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Style rule for footer a selector */
+footer a {
+  background-color: lightskyblue;
+  color: navy;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 620px) {
+  .social {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.tab-desk {
+    display: block;
+}
+
+  }
+
+
+
+/* Media Query for Desktop Viewport */
+@media (min-width: 1000px) {
+  main.grid {
+    grid-template-columns: 1fr 1fr; /* Two equal columns for desktop */
+    gap: 2%;
+  }
+}
+
+/* Media Query for Large Desktop Viewports */
+  @media screen and (min-width: 1921px) {}
+
+@media screen and (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .images-container {
+    flex-direction: column;
+  }
+
+
+
+}
