@@ -67,7 +67,7 @@ h1 {
 
 /* Style rule for the nav selector */
 nav {
-  background-color: #f28a30;
+  background-color: #6975a6;
   padding: 0;
 }
 
@@ -87,7 +87,7 @@ nav li {
 }
 
 nav li:hover {
-  background-color: #f05837;
+  background-color: #6465a5;
 }
 
 /* Style rule for nav li a */
@@ -215,6 +215,7 @@ border-radius: 10px;
 
 .images-container {
   display: flex;
+  gap: 10px;
 }
 /* Style rule for aside, figure, and figcaption */
 aside {
@@ -395,7 +396,7 @@ label {
 footer {
   text-align: center;
   font-size: 0.85em;
-  background-color: lightskyblue;
+  background-color: #6975a6;
   color: navy;
   padding: 1% 0%;
   font-weight: bold;
@@ -404,7 +405,6 @@ footer {
 
 /* Style rule for footer a selector */
 footer a {
-  background-color: lightskyblue;
   color: navy;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
@@ -427,12 +427,8 @@ footer a {
 
 
 /* Media Query for Desktop Viewport */
-@media (min-width: 1000px) {
-  main.grid {
-    grid-template-columns: 1fr 1fr; /* Two equal columns for desktop */
-    gap: 2%;
-  }
-}
+
+
 
 /* Media Query for Large Desktop Viewports */
   @media screen and (min-width: 1921px) {}
