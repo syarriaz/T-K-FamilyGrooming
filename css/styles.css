@@ -25,7 +25,7 @@ aside {
 
 /* Style rules for body and images */
 body {
-  background-color: white;
+  background:radial-gradient(#fff, #6975a6);
 }
 
 img,
