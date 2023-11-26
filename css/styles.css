@@ -411,18 +411,18 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-@media (min-width: 620px) {
+/* @media (min-width: 620px) { */
   .social {
-  float: left;
-  display: flex;
-  align-items: center;
-}
-
-.tab-desk {
-    display: block;
-}
-
+    float: left;
+    display: flex;
+    align-items: center;
   }
+
+  .tab-desk {
+      display: block;
+  }
+
+  /* } */
 
 
 
@@ -431,7 +431,6 @@ footer a {
 
 
 /* Media Query for Large Desktop Viewports */
-  @media screen and (min-width: 1921px) {}
 
 @media screen and (max-width: 767px) {
   nav ul {
