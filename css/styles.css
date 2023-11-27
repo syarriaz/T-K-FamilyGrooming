@@ -1,7 +1,7 @@
 /*  
-Author: Sandra Arriaza
+Author: Sandra Arriaza and Ashley Cafiero
 File Name: styles.css
-Date: 10/02/2023
+Date: 11/25/2023
 */
 
 /* CSS Reset */
@@ -200,8 +200,8 @@ label {
 
 #submit {
   border: 1px solid #00000029;
-width: 200px;
-border-radius: 10px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 /* Services end */
@@ -410,8 +410,13 @@ footer a {
   font-family: 'Lato', sans-serif;
 }
 
+/* Style rule for footer */
+.bg-light-purple {
+    background-color:#6975a6;
+}
+
 /* Media Query for Tablet Viewport */
-/* @media (min-width: 620px) { */
+@media screen and (min-width: 550px), print { 
   .social {
     float: left;
     display: flex;
@@ -421,17 +426,12 @@ footer a {
   .tab-desk {
       display: block;
   }
-
-  /* } */
-
-
-
+.mobile {
+  display: none;
+}
+}  
+  
 /* Media Query for Desktop Viewport */
-
-
-
-/* Media Query for Large Desktop Viewports */
-
 @media screen and (max-width: 767px) {
   nav ul {
     flex-direction: column;
@@ -441,7 +441,4 @@ footer a {
   .images-container {
     flex-direction: column;
   }
-
-
-
 }
