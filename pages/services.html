@@ -18,26 +18,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
-<link rel="icon" type="images/png" sizes="32x32" href="../images/favicon-32x32.png">
-<link rel="icon" type="images/png" sizes="16x16" href="../images/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="images/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-
   <body>
-    <header>
-      <img src="../images/dog-banner.jpg" alt="Dog Banner">
-      <h1>T&K Family Grooming</h1>
-    </header>
-
-    <nav>
-      <ul>
-          <li><a href="../index.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>
-  </nav>
-
+    <div class="navbar-placeholder"></div>
     <main>
 
       <div id="Services" class="mobile">
@@ -50,107 +42,123 @@
       <div id="packages" class="tab-desk">
         <h2>We offer various packages for your pet's individual needs.</h2>
 
-        <table>
-            <caption>Service and Package pricing may vary depending on size.</caption>
-            <tr><!-- Row 1 -->
-                <th>Package</th>
-                <th>Pricing</th>
-                <th>Services Included</th>
+        <table class="table-bordered">
+            <caption>
+              <small>
+                Service and Package pricing may vary depending on pet size.</caption>
+              </small>
+          <thead>
+            <tr>
+              <th scope="col">Package</th>
+              <th scope="col">Pricing</th>
+              <th scope="col">Services Included</th>
             </tr>
-            <tr><!-- Row 2-->
-                <td>Standard Package</td>
-                <td>$45-65</td>
-                <td>
-                  <ul>
-                    <li>Bath</li>
-                    <li>20 minutes of brushing</li>
-                    <li>nail trimming</li>
-                    <li>ear cleaning</li>
-                    <li>blow drying</li>
-                  </ul>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Standard Package</th>
+              <td>$45-65</td>
+              <td>
+                <ul>
+                  <li>Bath</li>
+                  <li>20 minutes of brushing</li>
+                  <li>nail trimming</li>
+                  <li>ear cleaning</li>
+                  <li>blow drying</li>
+                </ul>
 
-                </td>
+              </td>
             </tr>
-            <tr><!-- Row 3 -->
-                <td>Premium Package</td>
-                <td>$75-95</td>
-                <td>
-                  <ul>
-                    <li>Everything in the standard packack plus:</li>
-                    <li>de-shedding treatment</li>
-                    <li>paw pad trimming</li>
-                    <li>sanitary trimming</li>
-                    <li>specialty/medicated bath</li> 
-                    <li>bows/bandana</li>
-                  </ul>  
-                </td>
-            </tr>
-            <tr><!-- Row 4 -->
-                <td>Luxury Package</td>
-                <td>$100-120</td>
-                <td>
-                  <ul>
-                    <li>Everything in the premium packack plus:</li>
-                    <li>aromatherapy bath</li>
-                    <li>blueberry facial treatment</li>
-                    <li>pawdicure (nail filing and smoothing)</li> 
-                    <li>customized styling/breed-specific cuts</li>
-                  </ul>
-                </td>
-            </tr>
-        </table>
-      </div>
-
-      <div id="additional">
-        <table>
-          <h2>You may also add any of these services to your package for an additional cost.</h2>
-          <tr><!-- Row 1 -->
-            <th>Service</th>
-            <th>Pricing</th>
-          </tr>
-          <tr><!-- Row 2 -->
-            <td>Flea and tick treatment</td>
-            <td> $20</td>
-          </tr>
-          <tr><!-- Row 3 -->
-            <td>Nail grinding</td>
-            <td>$7</td>
-          </tr>
-          <tr><!-- Row 4 -->
-            <td>Deep conditioning coat treatment</td>
-            <td>$10</td>
-          </tr>
-          <tr><!-- Row 5 -->
-            <td>Extra brushing and dematting</td>
-            <td>$15</td>
-          </tr>
-          <tr><!-- Row 6 -->
-            <td>Custom accessories/clothing</td>
-            <td>$8-50</td>
+            <tr>
+              <th scope="row">Premium Package</th>
+              <td>$75-95</td>
+              <td>
+                <ul>
+                  <li>Everything in the standard packack plus:</li>
+                  <li>de-shedding treatment</li>
+                  <li>paw pad trimming</li>
+                  <li>sanitary trimming</li>
+                  <li>specialty/medicated bath</li> 
+                  <li>bows/bandana</li>
+                </ul>  
+              </td>
           </tr>
           <tr>
-            <td>Pet-safe hair color</td>
-            <td>Call for pricing</td>
-          </tr>
+            <th scope="row">Luxury Package</th>
+            <td>$100-120</td>
+            <td>
+              <ul>
+                <li>Everything in the premium packack plus:</li>
+                <li>aromatherapy bath</li>
+                <li>blueberry facial treatment</li>
+                <li>pawdicure (nail filing and smoothing)</li> 
+                <li>customized styling/breed-specific cuts</li>
+              </ul>
+            </td>
+        </tr>
+          </tbody>
+        </table>
+
+        
+      </div>
+      
+      <div id="additional">
+        <table class="table-bordered">
+            <caption>
+              <small>
+
+                You may also add any of these services to your package at an additional cost.</caption>
+              </small>
+          <thead>
+            <tr>
+              <th scope="col">Service</th>
+              <th scope="col">Pricing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><!-- Row 2 -->
+              <td>Flea and tick treatment</td>
+              <td> $20</td>
+            </tr>
+            <tr><!-- Row 3 -->
+              <td>Nail grinding</td>
+              <td>$7</td>
+            </tr>
+            <tr><!-- Row 4 -->
+              <td>Deep conditioning coat treatment</td>
+              <td>$10</td>
+            </tr>
+            <tr><!-- Row 5 -->
+              <td>Extra brushing and dematting</td>
+              <td>$15</td>
+            </tr>
+            <tr><!-- Row 6 -->
+              <td>Custom accessories/clothing</td>
+              <td>$8-50</td>
+            </tr>
+            <tr>
+              <td>Pet-safe hair color</td>
+              <td>Call for pricing</td>
+            </tr>
+          </tbody>
         </table>
       </div>
-
     </main>
 
-    <footer>
 
+    <footer>
       <div class="social">
         <img src="../images/facebook-logo.png" alt="Facebook logo" 
                        onclick="window.open('https://www.facebook.com', '_blank')">
         <img src="../images/twitter-logo.png" alt="Twitter logo" 
                        onclick="window.open('https://www.twitter.com', '_blank')">
       </div>
-
-
       <p>&copy; Copyright 2023. All Rights Reserved.</p>
       <p><a href="mailto:syarriaz@aggies.ncat.edu">syarriaz@aggies.ncat.edu</a></p>
 
     </footer>
+
+    <script src="../scripts/script.js"></script>
 
   </body>
 

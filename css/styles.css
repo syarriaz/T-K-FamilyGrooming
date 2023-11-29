@@ -1,7 +1,7 @@
 /*  
-Author: Sandra Arriaza
+Author: Sandra Arriaza and Ashley Cafiero
 File Name: styles.css
-Date: 10/02/2023
+Date: 11/25/2023
 */
 
 /* CSS Reset */
@@ -16,7 +16,6 @@ h3,
 video,
 aside {
   margin: 0;
-  padding: 1%;
   border: 0;
   text-align: center;
   color: navy;
@@ -25,8 +24,114 @@ aside {
 
 /* Style rules for body and images */
 body {
-  background-color: white;
+  background:radial-gradient(#fff, #6975a6);
+
 }
+
+
+/* nav bar start */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.header{
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover{
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+
+/* Footer background color */
+.bg-light-purple {
+    background-color:#6975a6;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      top: 118px;
+      background-color: lightskyblue;
+      border-radius: 0;
+      
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+}
+
+
+
+
+/* nav bar end */
+
 
 img,
 video {
@@ -63,18 +168,45 @@ h1 {
   text-align: center;
 }
 
-/* Style rules for navigation area */
+/* Style rules for hamburger navigation area start */
+
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu-icon div {
+  height: 50px;
+  width: 50px;
+  background-color: lightskyblue;
+}
+/* Style rules for hamburger navigation area end */
+
+
+
+
 
 /* Style rule for the nav selector */
 nav {
-  background-color: #6975a6;
+  background-color:lightskyblue;
   padding: 0;
 }
 
 /* Style rule for nav ul */
 nav ul {
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 
 /* Style rule for nav li */
@@ -93,11 +225,14 @@ nav li:hover {
 /* Style rule for nav li a */
 nav li a {
   display: block;
-  color: #fff;
   padding: .5em 1em;
   text-decoration: none;
   font-weight: bold;
   list-style-type: none;
+}
+
+nav li a:hover {
+  color: #fff;
 }
 
 main.grid {
@@ -162,9 +297,17 @@ table, th, td {
   
 }
 
+table caption {
+  text-align: center;
+}
+
 th {
   background-color: lightskyblue;
   text-align: center;
+}
+
+td {
+  justify-content: center;
 }
 
 caption {
@@ -180,6 +323,7 @@ fieldset, input, textarea {
   margin-top: 2%;
   margin-left: 2%;
   margin-right: 2%;
+  padding: -2;
 }
 
 fieldset {
@@ -238,16 +382,9 @@ figcaption {
   border-top: 4px solid #6975a6;
   text-decoration:wavy
 }
-
 /* Gallery end */
 
-
-
-
-
-
 /* Contact start */
-
 /* Style rule for form elements */
 
 fieldset, input, textarea {
@@ -275,17 +412,10 @@ label {
 
 #submit {
   border: 1px solid #00000029;
-width: 200px;
-border-radius: 10px;
+  width: 200px;
+  border-radius: 10px;
 }
-
-
-
-
-
 /* Contact end */
-
-
 
 
 
@@ -314,7 +444,7 @@ border-radius: 10px;
 }
 
 ul li {
-      list-style: none;
+  list-style: none;
 }
 
 /* Style rule for aside, figure, and figcaption */
@@ -346,20 +476,20 @@ figcaption {
 
 
 .form-grid {
-      border: 1px solid #00000029;
-    padding: 15px;
-    border-radius: 10px;
+  border: 1px solid #00000029;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .customer-info-container {
   display: flex;
-      justify-content: center;
+  justify-content: center;
 }
 
 #submit {
-      border: 1px solid #00000029;
-    width: 200px;
-    border-radius: 10px;
+  border: 1px solid #00000029;
+  width: 200px;
+  border-radius: 10px;
 }
 
 /* Style rule for fieldset and input selectors */
@@ -396,7 +526,7 @@ label {
 footer {
   text-align: center;
   font-size: 0.85em;
-  background-color: #6975a6;
+  background-color:lightskyblue;
   color: navy;
   padding: 1% 0%;
   font-weight: bold;
@@ -418,8 +548,20 @@ footer a {
     align-items: center;
   }
 
+  .social img {
+    width: 30px;
+  }
+
   .tab-desk {
-      display: block;
+    display: block;
+  }
+
+  footer p {
+    color: navy;
+  }
+
+  footer .container {
+    margin: 0;
   }
 
   /* } */
@@ -445,3 +587,5 @@ footer a {
 
 
 }
+
+
