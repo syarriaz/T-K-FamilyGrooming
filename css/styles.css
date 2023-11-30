@@ -11,10 +11,10 @@ nav,
 main,
 footer,
 img,
-h1,
+h1, h2,
 h3,
-video,
-aside {
+video
+{
   margin: 0;
   border: 0;
   text-align: center;
@@ -24,7 +24,55 @@ aside {
 
 /* Style rules for body and images */
 body {
-  background-color: white;
+  background:radial-gradient(#fff, #6975a6);
+}
+
+
+/* nav bar start */
+
+li {
+  list-style: none;
+  color: navy;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.header{
+  border-bottom: 1px solid #E2E8F0;
+}
+
+/* nav bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+ .nav-link {
+  color: #5518ab !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: navy;
 }
 
 .nav-menu {
@@ -89,11 +137,7 @@ body {
 
 }
 
-
-
-
 /* nav bar end */
-
 
 img,
 video {
@@ -128,6 +172,7 @@ h1 {
   text-decoration: underline;
   font-style: italic;
   text-align: center;
+  color: navy;
 }
 
 /* Style rules for hamburger navigation area start */
@@ -151,7 +196,7 @@ h1 {
 .menu-icon div {
   height: 50px;
   width: 50px;
-  background-color: lightskyblue;
+  background-color: #6975a6;
 }
 /* Style rules for hamburger navigation area end */
 
@@ -163,6 +208,7 @@ h1 {
 nav {
   background-color:lightskyblue;
   padding: 0;
+  color:navy;
 }
 
 /* Style rule for nav ul */
@@ -209,16 +255,12 @@ video {
   height: 100%;
 }
 
-aside {
-  font-style: italic;
-  width: 100%;
-}
-
 /* Style rules for main content */
 main {
   padding: 2%;
   font-family: 'Lato', sans-serif;
   list-style-type: none;
+  color: navy;
 }
 
 /* Style rule for main paragraphs */
@@ -313,27 +355,11 @@ label {
 /* Services end */
 
 
-
-
-
-
 /* Gallery start */
 
-.images-container {
-  display: flex;
-  gap: 10px;
-}
-/* Style rule for aside, figure, and figcaption */
-aside {
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: underline;
-  font-style: italic;
-}
-
+/* Style rule for figure and figcaption */
 figure {
-  border: 4px solid #f28a30;
+  border: 4px solid;
   max-width: 400px;
   margin: 2% auto;
   box-shadow: 5px 5px #6975a6;
@@ -347,6 +373,9 @@ figcaption {
 /* Gallery end */
 
 /* Contact start */
+
+
+
 /* Style rule for form elements */
 
 fieldset, input, textarea {
@@ -373,7 +402,7 @@ label {
 }
 
 #submit {
-  border: 1px solid #00000029;
+  border: 1px solid lightskyblue;
   width: 200px;
   border-radius: 10px;
 }
@@ -523,11 +552,15 @@ footer a {
     display: block;
   }
 
-  /* } */
+  footer p {
+    color: navy;
+  }
+
+  footer .container {
+    margin: 0;
+  }
 
 
-
-/* Media Query for Desktop Viewport */
 @media screen and (max-width: 767px) {
   nav ul {
     flex-direction: column;
@@ -537,4 +570,15 @@ footer a {
   .images-container {
     flex-direction: column;
   }
+
+  .card-footer:last-child {
+    display: grid !important;
+  }
+  
+  .social {
+    justify-content: center ;
+  }
+
 }
+
+

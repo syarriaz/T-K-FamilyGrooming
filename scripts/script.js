@@ -16,3 +16,7 @@ $(document).ready(function () {
       });
   });
 });
+
+$.get("/common/footer.html", function(footerData) {
+    $(".footer-placeholder").html(footerData);
+});
