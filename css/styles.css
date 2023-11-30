@@ -24,45 +24,7 @@ aside {
 
 /* Style rules for body and images */
 body {
-  background:radial-gradient(#fff, #6975a6);
-
-}
-
-
-/* nav bar start */
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-
-.header{
-  border-bottom: 1px solid #E2E8F0;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.5rem;
-}
-
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: white;
 }
 
 .nav-menu {
@@ -344,8 +306,8 @@ label {
 
 #submit {
   border: 1px solid #00000029;
-width: 200px;
-border-radius: 10px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 /* Services end */
@@ -540,8 +502,13 @@ footer a {
   font-family: 'Lato', sans-serif;
 }
 
+/* Style rule for footer */
+.bg-light-purple {
+    background-color:#6975a6;
+}
+
 /* Media Query for Tablet Viewport */
-/* @media (min-width: 620px) { */
+@media screen and (min-width: 550px), print { 
   .social {
     float: left;
     display: flex;
@@ -556,24 +523,11 @@ footer a {
     display: block;
   }
 
-  footer p {
-    color: navy;
-  }
-
-  footer .container {
-    margin: 0;
-  }
-
   /* } */
 
 
 
 /* Media Query for Desktop Viewport */
-
-
-
-/* Media Query for Large Desktop Viewports */
-
 @media screen and (max-width: 767px) {
   nav ul {
     flex-direction: column;
@@ -583,9 +537,4 @@ footer a {
   .images-container {
     flex-direction: column;
   }
-
-
-
 }
-
-
